@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../styles/maindiv.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./styles/dropdown.css" />
+    <script
+      src="https://kit.fontawesome.com/3597c47b51.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dogs gallery</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="index.html" class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M180-475q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180-160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm240 0q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180 160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM266-75q-45 0-75.5-34.5T160-191q0-52 35.5-91t70.5-77q29-31 50-67.5t50-68.5q22-26 51-43t63-17q34 0 63 16t51 42q28 32 49.5 69t50.5 69q35 38 70.5 77t35.5 91q0 47-30.5 81.5T694-75q-54 0-107-9t-107-9q-54 0-107 9t-107 9Z"
+              /></svg
+            >DogGallery</a
+          >
+        </li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+        <li class="hideOnMobile"><a href="#">Resources</a></li>
+        <li class="dropdown hideOnMobile">
+          <a href="#"> Account</a>
+          <div class="dropdown-content">
+            <a href="#">Register</a>
+            <a href="#">Login</a>
+          </div>
+        </li>
+        <li onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="main-hero">
+        <h1 class="box-shadow">Welcome to DogGallery</h1>
+        <p class="main-p box-shadow">Your comprehensive guide to dog care!</p>
+
+        <h2 class="gallery-link">
+          <a href="main.html"> Explore Our Gallery </a>
+        </h2>
+      </div>
+      <h2>Dog Care Tips</h2>
+      <div class="care-tips">
+        <div class="tip">
+          <img src="./images/food.jpg" alt="Care Tip 1" />
+          <h3>
+            <a
+              href="https://www.theuniversityanimalclinic.com/services/blog/food-thought-how-correctly-feed-your-dog-other-pets"
+            >
+              Feeding</a
+            >
+          </h3>
+          <p>
+            Proper nutrition is essential for your dog's health. Learn about the
+            best diets and feeding schedules.
+          </p>
+        </div>
+        <div class="tip">
+          <img src="./images/exercise.jpg" alt="Care Tip 2" />
+          <h3>
+            <a
+              href="https://www.americanhumane.org/fact-sheet/exercising-your-pet/"
+              >Exercise</a
+            >
+          </h3>
+          <p>
+            Regular exercise keeps your dog healthy and happy. Find out the best
+            activities for your dog's breed.
+          </p>
+        </div>
+        <div class="tip">
+          <img src="./images/grooming.jpg" alt="Care Tip 3" />
+          <h3>
+            <a
+              href="https://www.humanesociety.org/resources/how-groom-your-dog-home#:~:text=Short%2C%20smooth%20or%20wiry%20coat,and%20mats%20and%20remove%20debris."
+              >Grooming</a
+            >
+          </h3>
+          <p>
+            Learn how to properly groom your dog to keep them clean and
+            comfortable.
+          </p>
+        </div>
+        <div class="tip">
+          <img src="./images/health.jpg" alt="Care Tip 4" />
+          <h3>
+            <a
+              href="https://selectandsave.shop/lemonade-pet-health-insurance/index.html?gad_source=1&gclid=Cj0KCQjw1qO0BhDwARIsANfnkv9G0WKEzqvhf61xqMTtCQtfnth8iDhEgXBvHSnmAIM9Ecqfhtmr5NcaApCjEALw_wcB"
+              >Health</a
+            >
+          </h3>
+          <p>
+            Stay informed about common health issues and how to prevent them.
+          </p>
+        </div>
+      </div>
+      <!-- footer -->
+    </div>
+    <div class="footer">
+      <nav>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2024 DogCareApp. All rights reserved.</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
