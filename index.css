@@ -16,6 +16,11 @@ body {
   color: rgb(248, 243, 243);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(9, 114, 189);
+}
 nav {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -66,13 +71,8 @@ nav li:first-child {
 .sidebar li {
   width: 100%;
 }
-.logo {
-  font-weight: bold;
-  font-size: 2rem;
-  color: rgb(9, 114, 189);
-}
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .hideOnMobile {
     display: none;
   }

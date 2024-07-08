@@ -1,5 +1,6 @@
 .main {
   text-align: center;
+  margin-bottom: 30px;
 }
 .main-hero {
   background-image: url(../images/bgPicture.jpg);
@@ -7,11 +8,11 @@
   background-repeat: no-repeat;
   background-position: center;
   color: rgba(2, 1, 8, 0.895);
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   margin-bottom: 20px;
 }
 h1 {
-  padding: 30px;
+  padding: 40px;
 }
 .gallery-link {
   /* color: rgb(240, 234, 234); */
@@ -19,6 +20,8 @@ h1 {
   border: 2px solid rgba(230, 224, 224, 0.04);
   background-color: #fafafa2c;
   border-radius: 25px;
+  margin-top: 50px;
+  padding-top: 20px;
 }
 .gallery-link > a {
   color: rgb(0, 109, 187);
@@ -41,6 +44,9 @@ h2:hover {
   /* margin-left: 10px; */
   /* flex-wrap: wrap; */
   gap: 2px;
+}
+.dogCare {
+  font-size: 30px;
 }
 
 /* @media only screen and (max-width: 400px) {
@@ -67,7 +73,13 @@ h2:hover {
   height: 200px;
   width: 200px;
 }
-
+.tip > h3 > a {
+  color: #111010;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.tip > h3 > a:hover {
+  color: rgb(67, 43, 226);
+}
 .footer {
   background-color: #fafafa;
   color: #080808;
@@ -89,4 +101,19 @@ h2:hover {
 .footer nav ul li a {
   color: #200707;
   text-decoration: none;
+}
+.footer-links > ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+}
+.footer-links > ul > li > a {
+  color: black;
+}
+.footer-links > ul > li > a:hover {
+  color: rgb(67, 43, 226);
 }
